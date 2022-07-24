@@ -48,9 +48,15 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    override fun onResume() {
-        super.onResume()
+    override fun onStart() {
+        super.onStart()
         viewModel.getAllProducts()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        homeAdapter.setData(ArrayList())
+        binding.productsRecycleView.adapter = homeAdapter
     }
 
     private fun initAdapter() {
