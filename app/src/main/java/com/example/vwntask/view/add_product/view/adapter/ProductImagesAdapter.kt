@@ -23,7 +23,6 @@ class ProductImagesAdapter(private val context: Context , private val communicat
 
         if (position == productsList.count()){
             holder.binding.apply {
-                productImageLayout.visibility = View.INVISIBLE
                 deleteImageImageView.visibility = View.INVISIBLE
                 root.setOnClickListener {
                     communicator.addNewProductImage()

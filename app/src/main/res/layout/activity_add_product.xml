@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mask_group_welcome_background"
     tools:context=".view.add_product.view.AddProductActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/back_imageView"
         android:layout_width="15dp"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
@@ -40,7 +41,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/back_imageView"
         app:layout_constraintTop_toBottomOf="@+id/add_product_textView" />
 
 
@@ -54,7 +55,7 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintStart_toStartOf="@+id/add_product_images_textView"
         app:layout_constraintTop_toBottomOf="@id/add_product_images_textView"
-        tools:itemCount="2"
+        tools:itemCount="1"
         tools:listitem="@layout/item_product_image" />
 
     <EditText
@@ -149,7 +150,7 @@
         android:layout_marginEnd="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/meal_editText"
-        app:srcCompat="@drawable/down_arrow_active" />
+        app:srcCompat="@drawable/up_arrow_inactive" />
 
     <ImageView
         android:id="@+id/meal_down_arrow"
@@ -167,7 +168,7 @@
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="@+id/meal_down_arrow"
         app:layout_constraintTop_toBottomOf="@+id/meal_down_arrow"
-        app:srcCompat="@drawable/down_arrow_active" />
+        app:srcCompat="@drawable/up_arrow_inactive" />
 
     <ImageView
         android:id="@+id/item_type_down_arrow"

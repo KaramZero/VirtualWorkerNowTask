@@ -29,4 +29,7 @@
     <string name="plates">Plates</string>
     <string name="hot_drinks">Hot Drinks</string>
     <string name="iced_coffee">Iced Coffee</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="already_has_account">Already have an account?</string>
+    <string name="no_item_found">no items found, try adding some…</string>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mask_group_welcome_background"
-    tools:context=".view.home.HomeActivity">
+    tools:context=".view.home.view.HomeActivity">
 
     <TextView
         android:id="@+id/what_to_eat_textView"
@@ -41,14 +41,16 @@
         android:id="@+id/type_scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
         android:fillViewport="true"
         android:scrollbars="none"
-        android:layout_marginTop="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_textView">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/breakfast_textView"
                 android:layout_width="120sp"
@@ -92,21 +94,23 @@
                 app:layout_constraintTop_toTopOf="@+id/breakfast_textView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </HorizontalScrollView >
+    </HorizontalScrollView>
 
     <HorizontalScrollView
         android:id="@+id/sub_type_scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
         android:fillViewport="true"
         android:scrollbars="none"
-        android:layout_marginTop="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type_scrollView">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingEnd="20sp">
+
             <TextView
                 android:id="@+id/all_textView"
                 android:layout_width="wrap_content"
@@ -160,7 +164,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </HorizontalScrollView >
+    </HorizontalScrollView>
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -176,6 +180,30 @@
         tools:itemCount="3"
         tools:listitem="@layout/item_product" />
 
+    <FrameLayout
+        android:id="@+id/no_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub_type_scrollView">
+
+        <include layout="@layout/no_item_found_layout" />
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.vwntask.view.add_product.view_model
+package com.example.vwntask.view.home.view_model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,16 +10,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class AddProductViewModel(private val roomDAO: RoomDAO) : ViewModel() {
+class HomeViewModel(private val roomDAO: RoomDAO) : ViewModel() {
 
-    private val _finish = MutableLiveData<Boolean>()
-    val finish: LiveData<Boolean> = _finish
+    private val _products = MutableLiveData<ArrayList<Product>>()
+    val products: LiveData<ArrayList<Product>> = _products
 
-    fun insertProduct(product: Product) {
+    fun getAllProducts() {
         viewModelScope.launch(Dispatchers.IO) {
-            roomDAO.insertProduct(product)
+            val res = roomDAO.getAllProducts()
             withContext(Dispatchers.Main) {
-                _finish.value = true
+                _products.value = ArrayList(res)
             }
         }
     }

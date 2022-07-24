@@ -7,20 +7,25 @@
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/card_border.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/delete_image.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/down_arrow_active.xml" value="0.1685" />
+        <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/down_arrow_activw.xml" value="0.121" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/down_arrow_inactive.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/mask_group_1.xml" value="0.1655" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/mask_group_welcome_background.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/plus.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/sign_in_button_background.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/signin_button_background.xml" value="0.1685" />
+        <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/up_arrow_active.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/up_arrow_active_.xml" value="0.1685" />
+        <entry key="..\:/ITI/VWNTask/app/src/main/res/drawable/up_arrow_inactive.xml" value="0.1685" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/activity_add_product.xml" value="0.25" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/item_product.xml" value="0.25" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/item_product_image.xml" value="0.25" />
         <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/item_products.xml" value="0.25" />
+        <entry key="..\:/ITI/VWNTask/app/src/main/res/layout/no_item_found_layout.xml" value="0.25" />
       </map>
     </option>
   </component>

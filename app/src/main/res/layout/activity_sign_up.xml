@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mask_group_welcome_background"
-    tools:context=".view.authorization.sign_in.SignInActivity">
+    tools:context=".view.authorization.sign_up.SignUpActivity">
 
 
     <TextView
@@ -66,6 +66,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_name_editText" />
 
+    <EditText
+        android:id="@+id/retype_password_editText"
+        android:layout_width="353sp"
+        android:layout_height="71sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_border"
+        android:ems="10"
+        android:hint="@string/retype_password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText" />
+
     <Button
         android:id="@+id/sign_in_BTN"
         android:layout_width="353sp"
@@ -73,25 +87,14 @@
         android:layout_marginTop="68dp"
         android:background="@drawable/sign_in_button_background"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/sign_in"
+        android:text="@string/sign_up"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_editText" />
-
-    <TextView
-        android:id="@+id/recovery_password_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/recovery_password"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/password_editText"
-        app:layout_constraintTop_toBottomOf="@+id/password_editText" />
+        app:layout_constraintTop_toBottomOf="@+id/retype_password_editText" />
 
     <TextView
         android:id="@+id/not_a_member_textView"
@@ -100,18 +103,18 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="28dp"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/not_a_member"
+        android:text="@string/already_has_account"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_in_BTN" />
 
     <TextView
-        android:id="@+id/register_now_textView"
+        android:id="@+id/sign_in_now_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6sp"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/register_now"
+        android:text="@string/sign_in"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
