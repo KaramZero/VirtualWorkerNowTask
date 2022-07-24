@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mask_group_welcome_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/welcome_imageView"
+        android:layout_width="393sp"
+        android:layout_height="337sp"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/welcome_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight=".4" />
+
+
+    <TextView
+        android:id="@+id/hello_again_textView"
+        android:layout_width="324sp"
+        android:layout_height="103sp"
+        android:layout_marginTop="75sp"
+        android:text="@string/discover"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_imageView" />
+
+
+    <TextView
+        android:id="@+id/welcome_back_textView"
+        android:layout_width="366sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/labore_et"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_again_textView" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="177sp"
+        android:layout_height="65sp"
+        android:layout_marginTop="50sp"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_back_textView" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="177sp"
+        android:layout_height="65sp"
+        android:text="@string/log_in"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sign_up_button"
+        app:layout_constraintTop_toTopOf="@+id/sign_up_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

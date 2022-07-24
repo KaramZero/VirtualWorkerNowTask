@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mask_group_welcome_background"
+    tools:context=".view.home.HomeActivity">
+
+    <TextView
+        android:id="@+id/what_to_eat_textView"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/what_would_you_like_to_eat"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search_textView"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/search"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/what_to_eat_textView" />
+
+    <HorizontalScrollView
+        android:id="@+id/type_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_textView">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/breakfast_textView"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/sign_in_button_background"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/breakfast"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dinner_textView"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/card_border"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/dinner"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/breakfast_textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/desserts_textView"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/card_border"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/desserts"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/dinner_textView"
+                app:layout_constraintTop_toTopOf="@+id/breakfast_textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView >
+
+    <HorizontalScrollView
+        android:id="@+id/sub_type_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_scrollView">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="20sp">
+            <TextView
+                android:id="@+id/all_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/plates_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/plates"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/all_textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hot_drinks_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/hot_drinks"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/plates_textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/iced_coffee_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/iced_coffee"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/hot_drinks_textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="410sp"
+        android:layout_marginTop="20sp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub_type_scrollView"
+        app:spanCount="2"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_product" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

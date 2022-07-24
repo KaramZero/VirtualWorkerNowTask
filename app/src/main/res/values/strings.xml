@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">VWN Task</string>
+    <string name="labore_et">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</string>
+    <string name="discover">Discover Your Dream Job Here</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="hello_again">Hello Again!</string>
+    <string name="welcome_back_to_your_second_home">Welcome back to your second home!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="recovery_password">Recovery Password</string>
+    <string name="register_now">Register now</string>
+    <string name="not_a_member">Not a member?</string>
+    <string name="done">Done</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_product_images">Add Product Images</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_info">Product Info</string>
+    <string name="meal">Meal</string>
+    <string name="item_type">Item Type</string>
+    <string name="price">Price</string>
+    <string name="what_would_you_like_to_eat">What would you like to eat</string>
+    <string name="search">Search</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="dinner">Dinner</string>
+    <string name="desserts">Desserts</string>
+    <string name="all">All</string>
+    <string name="plates">Plates</string>
+    <string name="hot_drinks">Hot Drinks</string>
+    <string name="iced_coffee">Iced Coffee</string>
+</resources>
